@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HomeComponent } from './pages/home/home.component';
+import { TableComponent } from './pages/table/table.component';
+import { BootstrapRoutingModule } from './bootstrap-routing.module';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    HomeComponent,
+    TableComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    BootstrapRoutingModule
   ]
 })
 export class BootstrapModule { }
